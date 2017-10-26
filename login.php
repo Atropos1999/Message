@@ -13,8 +13,8 @@
 
         $sql = "SELECT * from idm WHERE username='{$username}'and password='{$password}'";
         $mysqli_result = $mysqli->query($sql);
-
-        if ($row = $mysqli_result->fetch_array()) {
+        $row = $mysqli_result->fetch_assoc();  //索引数组
+        if ($row['username'] == $username && $row['password'] == $password ){
             $_SESSION["username"] = $row["username"];
             header("Location:Message_board.php");
         }else {
