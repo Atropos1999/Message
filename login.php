@@ -29,11 +29,16 @@
         <meta charset="utf-8"/>
         <title>管理员登录</title>
     </head>
-    <body>
-        <form action="login.php?act=chk" method="post">
-            <input type="text" name="username"/>
-            <input type="password" name="password"/>
-            <input type="submit" value="点击登录"/>
+    <body background="timg.jpg">
+        <form action="login.php?act=chk" method="post" style="width:100%;">
+            <div class="login" style="margin-top: 100px;text-align:center;">
+                <input style="margin-top: 20px;height:30px;width:20%;background:#fff;" type="text" name="username" autocomplete="off"/><br>
+                <input style="margin-top: 20px;height:30px;width:20%;background:#fff;" type="password" name="password" /><br>
+                <input style="margin-top: 20px;height:30px;width:20%;background:#fff;" type="submit" value="点击登录"/>
+            </div>
+
+
+
         </form>
     </body>
 </html>

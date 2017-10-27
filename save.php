@@ -10,8 +10,8 @@
 
 
     if( $message == ""){
-        echo "留言内容不能为空";
-        exit;
+       echo "留言内容不能为空";
+       exit;
     }
 
     if ($user == ""){

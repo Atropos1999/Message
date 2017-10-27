@@ -48,7 +48,7 @@
         <div class="message">
 
             <?php
-                date_default_timezone_set('Asia/Shanghai');
+                date_default_timezone_set('Asia/Shanghai');//时间函数
                 foreach ($rows as $row){
             $t = date("Y-m-d H:i:s", $row["time"]);
             ?>
